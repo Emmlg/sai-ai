@@ -31,11 +31,11 @@ export function driverData():Driver[]{
 
 
              [
-                { timestamp: "6:00",distanceKm:[0,113,226,339,451], attentionScore: [95,92,94,91,93], eyeMovement: 88, headPosition: 92, blinkRate: 18, yawnCount: 0 },
-                { timestamp: "6:15",distanceKm: [0,113,226,339,451], attentionScore: [95,92,94,91,93], eyeMovement: 85, headPosition: 90, blinkRate: 20, yawnCount: 1 },
-                { timestamp: "6:30",distanceKm: [0,113,226,339,451], attentionScore: [95,92,94,91,93], eyeMovement: 90, headPosition: 88, blinkRate: 19, yawnCount: 0 },
-                { timestamp: "6:45",distanceKm: [0,113,226,339,451], attentionScore: [95,92,94,91,93], eyeMovement: 87, headPosition: 89, blinkRate: 22, yawnCount: 1 },
-                { timestamp: "6:00",distanceKm: [0,113,226,339,451], attentionScore: [95,92,94,91,93], eyeMovement: 89, headPosition: 91, blinkRate: 20, yawnCount: 0 },
+                { timestamp: "6:00", attentionScore: 95, eyeMovement: 88, headPosition: 92, blinkRate: 18, yawnCount: 0 },
+                { timestamp: "6:15", attentionScore: 92, eyeMovement: 85, headPosition: 90, blinkRate: 20, yawnCount: 1 },
+                { timestamp: "6:30", attentionScore: 94, eyeMovement: 90, headPosition: 88, blinkRate: 19, yawnCount: 0 },
+                { timestamp: "6:45", attentionScore: 91, eyeMovement: 87, headPosition: 89, blinkRate: 22, yawnCount: 1 },
+                { timestamp: "6:00", attentionScore: 93, eyeMovement: 89, headPosition: 91, blinkRate: 20, yawnCount: 0 },
             ],
         },
         {
@@ -59,11 +59,11 @@ export function driverData():Driver[]{
             shiftStartTime: "12:00",
             hoursOnDuty: 3.5,
             alertnessData: [
-                { timestamp: "12:00",distanceKm:[0,113,226,339,451], attentionScore: [72,68,70,65,68], eyeMovement: 65, headPosition: 70, blinkRate: 28, yawnCount: 3 },
-                { timestamp: "12:15",distanceKm:[0,113,226,339,451], attentionScore: [72,68,70,65,68], eyeMovement: 62, headPosition: 68, blinkRate: 32, yawnCount: 4 },
-                { timestamp: "12:30",distanceKm:[0,113,226,339,451], attentionScore: [72,68,70,65,68], eyeMovement: 68, headPosition: 72, blinkRate: 30, yawnCount: 2 },
-                { timestamp: "12:45",distanceKm:[0,113,226,339,451], attentionScore: [72,68,70,65,68], eyeMovement: 60, headPosition: 65, blinkRate: 35, yawnCount: 5 },
-                { timestamp: "13:00",distanceKm:[0,113,226,339,451], attentionScore: [72,68,70,65,68], eyeMovement: 64, headPosition: 69, blinkRate: 33, yawnCount: 3 },
+                { timestamp: "12:00", attentionScore: 72, eyeMovement: 65, headPosition: 70, blinkRate: 28, yawnCount: 3 },
+                { timestamp: "12:15", attentionScore: 68, eyeMovement: 62, headPosition: 68, blinkRate: 32, yawnCount: 4 },
+                { timestamp: "12:30", attentionScore: 70, eyeMovement: 68, headPosition: 72, blinkRate: 30, yawnCount: 2 },
+                { timestamp: "12:45", attentionScore: 65, eyeMovement: 60, headPosition: 65, blinkRate: 35, yawnCount: 5 },
+                { timestamp: "13:00", attentionScore: 68, eyeMovement: 64, headPosition: 69, blinkRate: 33, yawnCount: 3 },
             ],
         },
         {
@@ -87,11 +87,11 @@ export function driverData():Driver[]{
             shiftStartTime: "14:00",
             hoursOnDuty: 5.3,
             alertnessData: [
-                { timestamp: "14:00",distanceKm:[0,113,226,339,451], attentionScore: [45,38, 42, 32, 35], eyeMovement: 40, headPosition: 42, blinkRate: 45, yawnCount: 8 },
-                { timestamp: "14:15",distanceKm:[0,113,226,339,451], attentionScore: [45,38, 42, 32, 35], eyeMovement: 35, headPosition: 38, blinkRate: 50, yawnCount: 12 },
-                { timestamp: "14:30",distanceKm:[0,113,226,339,451], attentionScore: [45,38, 42, 32, 35], eyeMovement: 38, headPosition: 40, blinkRate: 48, yawnCount: 10 },
-                { timestamp: "14:45",distanceKm:[0,113,226,339,451], attentionScore: [45,38, 42, 32, 35], eyeMovement: 30, headPosition: 35, blinkRate: 55, yawnCount: 15 },
-                { timestamp: "15:00",distanceKm:[0,113,226,339,451], attentionScore: [45,38, 42, 32, 35], eyeMovement: 32, headPosition: 37, blinkRate: 52, yawnCount: 13 },
+                { timestamp: "14:00", attentionScore:45, eyeMovement: 40, headPosition: 42, blinkRate: 45, yawnCount: 8 },
+                { timestamp: "14:15", attentionScore: 38, eyeMovement: 35, headPosition: 38, blinkRate: 50, yawnCount: 12 },
+                { timestamp: "14:30", attentionScore: 42, eyeMovement: 38, headPosition: 40, blinkRate: 48, yawnCount: 10 },
+                { timestamp: "14:45", attentionScore: 32, eyeMovement: 30, headPosition: 35, blinkRate: 55, yawnCount: 15 },
+                { timestamp: "15:00", attentionScore: 35, eyeMovement: 32, headPosition: 37, blinkRate: 52, yawnCount: 13 },
             ],
         },
         {
@@ -115,11 +115,11 @@ export function driverData():Driver[]{
             shiftStartTime: "08:00",
             hoursOnDuty: 3.2,
             alertnessData: [
-                { timestamp: "8:00",distanceKm:[0,113,226,339,451], attentionScore: [90, 88, 89, 86, 88], eyeMovement: 85, headPosition: 88, blinkRate: 20, yawnCount: 1 },
-                { timestamp: "14:15",distanceKm:[0,113,226,339,451], attentionScore: [90, 88, 89, 86, 88], eyeMovement: 82, headPosition: 86, blinkRate: 22, yawnCount: 2 },
-                { timestamp: "14:30",distanceKm:[0,113,226,339,451], attentionScore: [90, 88, 89, 86, 88], eyeMovement: 84, headPosition: 87, blinkRate: 21, yawnCount: 1 },
-                { timestamp: "14:45",distanceKm:[0,113,226,339,451], attentionScore: [90, 88, 89, 86, 88], eyeMovement: 80, headPosition: 85, blinkRate: 24, yawnCount: 3 },
-                { timestamp: "15:00",distanceKm:[0,113,226,339,451], attentionScore: [90, 88, 89, 86, 88], eyeMovement: 83, headPosition: 86, blinkRate: 23, yawnCount: 2 },
+                { timestamp: "8:00",  attentionScore: 90, eyeMovement: 85, headPosition: 88, blinkRate: 20, yawnCount: 1 },
+                { timestamp: "14:15", attentionScore: 88, eyeMovement: 82, headPosition: 86, blinkRate: 22, yawnCount: 2 },
+                { timestamp: "14:30", attentionScore: 89, eyeMovement: 84, headPosition: 87, blinkRate: 21, yawnCount: 1 },
+                { timestamp: "14:45", attentionScore: 86, eyeMovement: 80, headPosition: 85, blinkRate: 24, yawnCount: 3 },
+                { timestamp: "15:00", attentionScore: 88, eyeMovement: 83, headPosition: 86, blinkRate: 23, yawnCount: 2 },
             ],
         },
         {
@@ -143,11 +143,11 @@ export function driverData():Driver[]{
             shiftStartTime: "09:00",
             hoursOnDuty: 2.8,
             alertnessData: [
-                { timestamp: "14:00",distanceKm:[0,113,226,339,451], attentionScore: [75, 72, 74, 70, 72], eyeMovement: 70, headPosition: 73, blinkRate: 26, yawnCount: 2 },
-                { timestamp: "14:15",distanceKm:[0,113,226,339,451], attentionScore: [75, 72, 74, 70, 72], eyeMovement: 68, headPosition: 71, blinkRate: 28, yawnCount: 3 },
-                { timestamp: "14:30",distanceKm:[0,113,226,339,451], attentionScore: [75, 72, 74, 70, 72], eyeMovement: 72, headPosition: 74, blinkRate: 27, yawnCount: 2 },
-                { timestamp: "14:45",distanceKm:[0,113,226,339,451], attentionScore: [75, 72, 74, 70, 72], eyeMovement: 66, headPosition: 69, blinkRate: 30, yawnCount: 4 },
-                { timestamp: "15:00",distanceKm:[0,113,226,339,451], attentionScore: [75, 72, 74, 70, 72], eyeMovement: 69, headPosition: 72, blinkRate: 29, yawnCount: 3 },
+                { timestamp: "14:00", attentionScore: 75, eyeMovement: 70, headPosition: 73, blinkRate: 26, yawnCount: 2 },
+                { timestamp: "14:15", attentionScore: 72, eyeMovement: 68, headPosition: 71, blinkRate: 28, yawnCount: 3 },
+                { timestamp: "14:30", attentionScore: 74, eyeMovement: 72, headPosition: 74, blinkRate: 27, yawnCount: 2 },
+                { timestamp: "14:45", attentionScore: 70, eyeMovement: 66, headPosition: 69, blinkRate: 30, yawnCount: 4 },
+                { timestamp: "15:00", attentionScore: 72, eyeMovement: 69, headPosition: 72, blinkRate: 29, yawnCount: 3 },
             ],
         },
     ]

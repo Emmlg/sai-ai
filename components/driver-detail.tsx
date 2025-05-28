@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ArrowLeft, Eye, Brain, Activity, Clock, MapPin, AlertTriangle, TrendingUp } from "lucide-react"
-import AttentionByDistanceChart from "@/components/grafic";
 
 interface DriverDetailProps {
   driver: Driver
@@ -161,15 +160,19 @@ export function DriverDetail({ driver, onBack }: DriverDetailProps) {
                   <div key={index} className="flex items-center space-x-4">
                     <div className="w-12 text-sm text-gray-600">{data.timestamp}</div>
                     <div className="flex-1">
-
+                      <div className="flex justify-between text-sm mb-1">
+                        <span>Atención: {data.attentionScore}%</span>
+                        <span className={getScoreColor(data.attentionScore)}>{data.attentionScore}%</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-3">
+                        <div
+                          className={`h-3 rounded-full ${getBarColor(data.attentionScore)}`}
+                          style={{ width: `${data.attentionScore}%` }}
+                        />
+                      </div>
                     </div>
-                    < AttentionByDistanceChart
-                        attentionLevels={data.attentionScore}
-                        distance={data.distanceKm}
-                    />
                   </div>
                 ))}
-
               </div>
             </CardContent>
           </Card>

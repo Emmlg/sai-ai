@@ -14,8 +14,7 @@ export interface Driver {
     fatigueLevel: number // 0-100
     alertnessData: {
         timestamp: string
-        distanceKm: number[]
-        attentionScore: number[]
+        attentionScore: number
         eyeMovement: number
         headPosition: number
         blinkRate: number
