@@ -3,9 +3,12 @@ import {ATTENTION_LEVEL, EXPERIENCE_LEVEL, vehicleType} from "@/commons/constant
 import {joinRoute} from "@/util/currentRoute";
 import {CONSTANTS} from "@/commons/constants/constants";
 import AttentionByDistanceChart from "@/components/grafic";
+import {getMetricsData} from "@/service/somnia";
 
 
 export function driverData():Driver[]{
+    const alertnessData =  getMetricsData(); // esto es un arreglo o null
+
     return [
         {
             id: "1",
@@ -149,6 +152,28 @@ export function driverData():Driver[]{
                 { timestamp: "14:45", attentionScore: 70, eyeMovement: 66, headPosition: 69, blinkRate: 30, yawnCount: 4 },
                 { timestamp: "15:00", attentionScore: 72, eyeMovement: 69, headPosition: 72, blinkRate: 29, yawnCount: 3 },
             ],
+        },
+        {
+            id: "5",
+            name: "Sofia López",
+            image: "/assets/sofia_lopez.png",
+            attentionLevel: ATTENTION_LEVEL.MODERADO,
+            attentionScore: 72,
+            fatigueLevel: 38,
+            lastUpdate: "Hace 45 segundos",
+            licenseNumber: "A99887766",
+            vehicleType: vehicleType.CAMION_CARGA,
+            totalTrips: 1423,
+            experienceLevel: EXPERIENCE_LEVEL.INTERMEDIO,
+            yearsExperience: 7,
+            lastTripDate: "2024-01-07",
+            safetyScore: 82,
+            currentRoute: joinRoute(CONSTANTS.CITY_COMD,CONSTANTS.CITY_PUE),
+            estimatedDistance: 852,
+            isOnDuty: true,
+            shiftStartTime: "09:00",
+            hoursOnDuty: 2.8,
+            alertnessData: alertnessData??[],
         },
     ]
 
