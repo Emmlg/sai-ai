@@ -1,6 +1,6 @@
 "use client"
 
-import type { Driver } from "@/components/attention-monitor-app"
+import type { Driver } from "@/commons/types/DriverType"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"

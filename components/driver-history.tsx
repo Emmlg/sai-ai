@@ -290,7 +290,7 @@ export function DriverHistory({ driverHistory, onBack }: DriverHistoryProps) {
                     </div>
                     <div className="flex items-center text-gray-600">
                       <Star className="h-4 w-4 mr-2" />
-                      Viajes perfectos: {driver.perfectTripsPercentage}%
+                       {driver.tipoviaje}
                     </div>
                     <div className="flex items-center text-gray-600">
                       <Clock className="h-4 w-4 mr-2" />

@@ -50,7 +50,7 @@ export interface DriverHistoryRecord {
     lastActiveDate: string
     status: STATUS
     incidentsCount: number
-    perfectTripsPercentage: number
+    tipoviaje: string
     riskLevel : RISK_LEVEL
     totalHoursDriven: number
     fatigueIncidents: number
